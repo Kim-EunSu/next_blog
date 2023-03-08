@@ -1,13 +1,14 @@
 import Link from "next/link";
+import Logo from "./Logo";
+import classes from "./main-navigation.module.css";
 
 function MainNavigation() {
   return (
-    <header>
+    <header className={classes.header}>
       <Link href="/">
         <a>
           <Logo />
         </a>
-        {/* 이처럼 일반텍스트가 아닌 다른 입력값에 대해서는 Link태그가 렌더링되지 않으므로 a태그를 따로 추가해야함  */}
       </Link>
       <nav>
         <ul>
